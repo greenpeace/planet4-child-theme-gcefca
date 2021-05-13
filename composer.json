@@ -1,0 +1,26 @@
+{
+  "name": "greenpeace/planet4-child-theme-gcefca",
+  "description": "Child theme for the GCEF website of the Planet 4 Wordpress project",
+  "type":"wordpress-theme",
+  "minimum-stability" : "stable",
+  "license": "GPL-3.0+",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "support": {
+    "source": "https://github.com/greenpeace/planet4-child-theme-gcefca"
+  },
+  "extra": {
+    "installer-paths": {
+      "../../plugins/{$name}/": [
+        "wpackagist-plugin/*",
+        "type:wordpress-plugin"
+      ]
+    }
+  },
+  "require": {
+  }
+}
