@@ -16,3 +16,70 @@ Text Domain: planet4-child-theme-gcefca
   Display which theme is active right now in bottom right corner
   See also planet4-child-theme-gcefca. Feel free to drop or hide display
 */
+
+.navbar-dropdown {
+  justify-content: flex-end !important;
+}
+
+@media (min-width: 992px) {
+  .nav-link,
+  .navbar-dropdown {
+    margin: 0 15px !important;
+  }
+}
+
+.btn-primary {
+  background: #05324c;
+  opacity: 0.8;
+  transition: 0.3s;
+  border: none;
+}
+.btn-primary:hover {
+  background: #074365;
+  opacity: 0.8;
+  border: none;
+}
+
+.split-two-column-item-image:before {
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+@media (max-width: 576px) {
+  .item--right,
+  .split-two-column-item-button,
+  .split-two-column-item-link,
+  .split-two-column-item-subtitle,
+  .split-two-column-item-tag {
+    display: block !important;
+  }
+  .split-two-column-item-image {
+    position: relative !important;
+  }
+  .split-two-column-item-content {
+    background: white;
+    color: black;
+  }
+  .split-two-column-item-subtitle {
+    margin-bottom: 0;
+    font-weight: 300;
+  }
+  .split-two-column-item-image:before {
+    display: none;
+  }
+  .split-two-column-item-subtitle,
+  .split-two-column-item-title {
+    padding: 10px;
+  }
+  .split-two-column-item.item--right > .split-two-column-item-image {
+    display: none;
+  }
+}
+
+.split-two-column {
+  display: inline-block !important;
+}

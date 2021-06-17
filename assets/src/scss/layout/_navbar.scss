@@ -45,11 +45,11 @@ $navbar-default-height: 60px;
     }
   }
 
-  .donate-nav-item {
+  /* .donate-nav-item {
     line-height: 1;
     height: $navbar-default-height;
   }
-  /*
+
   .btn-donate {
     margin-top: 10px;
     height: 40px;
@@ -67,8 +67,8 @@ $navbar-default-height: 60px;
 
 .site-logo,
 .btn-navbar-toggle,
-//.navbar-search-toggle,
-//.country-dropdown-toggle,
+.navbar-search-toggle,
+.country-dropdown-toggle,
 .nav-item,
 .nav-link {
   line-height: $menu-height-small;
@@ -93,7 +93,7 @@ $navbar-default-height: 60px;
   }
 }
 
-//.navbar-search-toggle,
+.navbar-search-toggle,
 .btn-navbar-toggle {
   line-height: 2rem;
   margin: 11px;
@@ -206,9 +206,9 @@ $navbar-default-height: 60px;
     left: auto;
     right: 0;
 
-    /*     .country-dropdown-toggle {
-      text-transform: none;
-    } */
+    .country-dropdown-toggle {
+      text-transform: uppercase !important;
+    }
   }
 
   @include small-and-up {
@@ -384,7 +384,7 @@ $navbar-default-height: 60px;
       z-index: 2;
     }
 
-    /*  .btn-donate {
+    /* .btn-donate {
       display: block;
       min-width: 200px;
       margin: 1.5em auto;
@@ -429,10 +429,10 @@ $navbar-default-height: 60px;
     padding: 0 15px;
   }
 
-  .nav-item {
+  /*  .nav-item {
     margin: 0;
     padding: 0;
-  }
+  } */
 
   .wpml-ls-current-language {
     display: list-item;
@@ -555,19 +555,19 @@ $navbar-default-height: 60px;
     display: inline-block;
     margin-left: 10px;
     transition: transform 300ms linear;
-  }
+  } */
 
-  &:focus,
+/*   &:focus,
   &:hover {
     color: $white;
-  }
+  } */
 
-  &[aria-expanded="true"] {
+/*   &[aria-expanded="true"] {
     &::after {
       transform: rotate(180deg);
     }
   }
-} */
+}*/
 
 .country-list {
   _-- {
@@ -597,7 +597,7 @@ $navbar-default-height: 60px;
     text-decoration: underline;
   }
 
-  .country-group-letter {
+  /* .country-group-letter {
     _-- {
       font-size: $font-size-sm;
       font-weight: bold;
@@ -620,7 +620,7 @@ $navbar-default-height: 60px;
         margin-right: -#{$n25};
       }
     }
-  }
+  } */
 
   > ul {
     padding: 0 0 2em;
@@ -670,11 +670,11 @@ $navbar-default-height: 60px;
   }
 
   @include large-and-up {
-    --country-list-- {
+    /*     --country-list-- {
       height: 344px;
       width: 80%;
       left: 10%;
-    }
+    } */
     max-height: calc(100vh - #{$menu-height-large});
     position: absolute;
     overflow-x: hidden;
@@ -745,9 +745,9 @@ $navbar-default-height: 60px;
     margin: 0 0 0 $space-lg;
     line-height: 1rem;
 
-    .nav-link {
+    /*     .nav-link {
       margin: 0;
-    }
+    } */
   }
 
   .language-selector-min {
@@ -804,7 +804,7 @@ $navbar-default-height: 60px;
 }
 
 // Enhanced mobile Donate button
-/* .btn-donate {
+.btn-donate {
   &.btn-donate-top {
     position: fixed;
     left: 0;
@@ -827,7 +827,7 @@ $navbar-default-height: 60px;
       top: -6.2rem;
     }
   }
-} */
+}
 
 body.with-donate-on-top {
   padding-top: 3.3rem;
