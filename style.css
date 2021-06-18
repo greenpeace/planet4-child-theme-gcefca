@@ -25,17 +25,22 @@ Text Domain: planet4-child-theme-gcefca
   .nav-link,
   .navbar-dropdown {
     margin: 0 15px !important;
+    border-bottom: none !important;
   }
 }
 
+.nav-link:hover {
+  border-bottom: 2px solid #fff !important;
+}
+
 .btn-primary {
-  background: #05324c;
+  background: #05324c !important;
   opacity: 0.8;
   transition: 0.3s;
   border: none;
 }
 .btn-primary:hover {
-  background: #074365;
+  background: #074365 !important;
   opacity: 0.8;
   border: none;
 }

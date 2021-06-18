@@ -6,7 +6,7 @@
 		{% set toggle_label = __( 'Toggle navigation menu', 'planet4-master-theme' ) %}
 		{% set search_label = __( 'Search', 'planet4-master-theme' ) %}
 
-		<button
+{# 		<button
 			class="btn btn-navbar-toggle navbar-dropdown-toggle"
 			data-bs-toggle="open"
 			data-bs-target="#navbar-dropdown"
@@ -18,7 +18,7 @@
 				data-ga-label="{{ page_category }}">
 					{{ __( 'Menu', 'planet4-master-theme' ) }}
 			</span>
-		</button>
+		</button> #}
 
 		<ul id="navbar-dropdown" class="navbar-dropdown list-unstyled">
 
@@ -60,12 +60,47 @@
 				</button>
 			</li>
 
-
         <li class="nav-item">
           <a href="#" class="nav-link" data-ga-category="Menu Navigation"> Contact </a>
         </li>#}
 
-			{% for key,item in navbar_menu.get_items %}
+			        {% for key,item in navbar_menu.get_items %}
+                {% if item.children %}
+                        {% for child in item.children %}
+                            <li class="nav-item">
+                              <a class="nav-link" href="{{ child.link }}">{{ child.title }}</a>
+                            </li>
+                            <button
+                                    class="btn btn-navbar-toggle navbar-dropdown-toggle"
+                                    data-bs-toggle="open"
+                                    data-bs-target="#navbar-dropdown"
+                                    aria-expanded="false"
+                                    data-ga-label="{{ toggle_label }}">
+                              <span
+                                    data-ga-category="Menu Navigation"
+                                    data-ga-action="Open Menu"
+                                    data-ga-label="{{ page_category }}">
+                                    {{ __( 'Menu', 'planet4-master-theme' ) }}
+			                        </span>
+				                    </button>
+                        <li class="nav-item">
+                          <button class="close-navbar-dropdown"
+                            data-ga-category="Menu Navigation"
+                            data-ga-action="Close Menu"
+                            data-ga-label="{{ page_category }}">
+                              <span
+                                class="visually-hidden"
+                                data-ga-category="Menu Navigation"
+                                data-ga-action="Close Menu"
+                                data-ga-label="{{ page_category }}">
+                                  {{ __( 'Close Menu', 'planet4-master-theme' ) }}
+                              </span>
+                          </button>
+                        </li>
+                        {% endfor %}
+                {% endif %}
+
+
 				{% if 'wpml-ls-item' in item.class %}
 					{% if key == 0 %}
 						<li class="nav-item {{ item.class }}">
