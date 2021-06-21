@@ -22,24 +22,25 @@ Text Domain: planet4-child-theme-gcefca
 }
 
 @media (min-width: 992px) {
-  .nav-link,
-  .navbar-dropdown {
+  .nav-link {
     margin: 0 15px !important;
     border-bottom: none !important;
   }
-}
-
-.nav-link:hover {
-  border-bottom: 2px solid #fff !important;
+  .nav-link:hover,
+  button.country-dropdown-toggle:hover {
+    border-bottom: 2px solid #fff !important;
+  }
 }
 
 .btn-primary {
+  cursor: pointer;
   background: #05324c !important;
   opacity: 0.8;
   transition: 0.3s;
   border: none;
 }
 .btn-primary:hover {
+  cursor: pointer;
   background: #074365 !important;
   opacity: 0.8;
   border: none;
@@ -87,4 +88,63 @@ Text Domain: planet4-child-theme-gcefca
 
 .split-two-column {
   display: inline-block !important;
+}
+
+button.country-dropdown-toggle {
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0 15px !important;
+  font-size: 1.25rem;
+  line-height: 1.25em;
+  font-weight: inherit;
+  color: #fff;
+}
+
+.country-dropdown-toggle:after,
+.visually-hidden,
+.visually-hidden-focusable:not(:focus):not(:focus-within) {
+  background: none !important;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .country-list,
+  #sub-about {
+    height: auto;
+    width: 15%;
+    left: auto;
+  }
+
+  .dropdown-menu.about {
+    display: grid;
+  }
+  .country-list.open,
+  .about-list.open {
+    padding: 0px !important;
+    height: auto;
+  }
+
+  .country-list.ul {
+    column-count: none !important;
+  }
+
+  .country-list.li {
+    padding-left: 15px;
+  }
+
+  .nav-link.about:hover {
+    border-bottom: none !important;
+  }
+}
+
+@media (max-width: 991px) {
+  button.country-dropdown-toggle {
+    padding: 0 35px !important;
+    display: block;
+    line-height: 2.8125rem;
+    font-size: 1rem;
+    margin: 0.5em 0;
+    width: auto !important;
+    background: transparent;
+  }
 }

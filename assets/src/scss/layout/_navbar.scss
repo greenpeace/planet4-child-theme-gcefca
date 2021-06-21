@@ -530,7 +530,7 @@ $navbar-default-height: 60px;
   }
 } */
 
-/* .country-dropdown-toggle {
+.country-dropdown-toggle {
   cursor: pointer;
   font-size: $font-size-sm;
   border: 0;
@@ -550,26 +550,19 @@ $navbar-default-height: 60px;
     content: "";
     width: 8px;
     height: 8px;
-    background: url("../../images/down-arrow-white.svg") no-repeat center center;
     background-size: contain;
     display: inline-block;
     margin-left: 10px;
     transition: transform 300ms linear;
-  } */
+  }
 
-/*   &:focus,
   &:hover {
     color: $white;
-  } */
-
-/*   &[aria-expanded="true"] {
-    &::after {
-      transform: rotate(180deg);
-    }
   }
-}*/
+}
 
-.country-list {
+.country-list,
+.about-list {
   _-- {
     background: $x-dark-blue;
     line-height: 1.5;
@@ -597,7 +590,7 @@ $navbar-default-height: 60px;
     text-decoration: underline;
   }
 
-  /* .country-group-letter {
+  .country-group-letter {
     _-- {
       font-size: $font-size-sm;
       font-weight: bold;
@@ -620,7 +613,7 @@ $navbar-default-height: 60px;
         margin-right: -#{$n25};
       }
     }
-  } */
+  }
 
   > ul {
     padding: 0 0 2em;
@@ -670,11 +663,16 @@ $navbar-default-height: 60px;
   }
 
   @include large-and-up {
-    /*     --country-list-- {
+    --about-list-- {
       height: 344px;
       width: 80%;
       left: 10%;
-    } */
+    }
+    --country-list-- {
+      height: 344px;
+      width: 80%;
+      left: 10%;
+    }
     max-height: calc(100vh - #{$menu-height-large});
     position: absolute;
     overflow-x: hidden;
