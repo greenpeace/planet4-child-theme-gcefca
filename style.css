@@ -109,6 +109,7 @@ button.country-dropdown-toggle {
 
 @media (min-width: 992px) {
   .country-list,
+  .about-list,
   #sub-about {
     height: auto;
     width: 15%;
@@ -124,11 +125,13 @@ button.country-dropdown-toggle {
     height: auto;
   }
 
-  .country-list.ul {
+  .country-list.ul,
+  .about-list.ul {
     column-count: none !important;
   }
 
-  .country-list.li {
+  .country-list.li,
+  .about-list.li {
     padding-left: 15px;
   }
 
