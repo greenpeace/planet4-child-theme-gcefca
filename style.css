@@ -140,7 +140,7 @@ button.country-dropdown-toggle {
   }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   button.country-dropdown-toggle {
     padding: 0 35px !important;
     display: block;
@@ -149,5 +149,23 @@ button.country-dropdown-toggle {
     margin: 0.5em 0;
     width: auto !important;
     background: transparent;
+  }
+}
+
+.site-logo {
+  pointer-events: none;
+}
+
+.top-navigation {
+  height: 4.75rem;
+}
+
+.site-logo img {
+  height: 3rem !important;
+}
+
+@media (max-width: 992px) {
+  .site-logo img {
+    margin-top: 1rem;
   }
 }
