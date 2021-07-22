@@ -36,11 +36,11 @@ export const setupHeader = function ($) {
       });
 
       // Toggle data-ga-action attribute used in GTM tracking.
-      $(".country-dropdown-toggle").attr(
+      $(".dropdown-toggle").attr(
         "data-ga-action",
-        $(".country-dropdown-toggle").attr("aria-expanded") === "false"
-          ? "Open Country Selector"
-          : "Close Country Selector"
+        $(".dropdown-toggle").attr("aria-expanded") === "false"
+          ? "Open About Menu"
+          : "Close About Menu"
       );
       $(".navbar-search-toggle").attr(
         "data-ga-action",

@@ -27,7 +27,7 @@ Text Domain: planet4-child-theme-gcefca
     border-bottom: none !important;
   }
   .nav-link:hover,
-  button.country-dropdown-toggle:hover {
+  a.dropdown-toggle:hover {
     border-bottom: 2px solid #fff !important;
   }
 }
@@ -90,7 +90,7 @@ Text Domain: planet4-child-theme-gcefca
   display: inline-block !important;
 }
 
-button.country-dropdown-toggle {
+a.dropdown-toggle {
   text-transform: uppercase;
   padding: 0;
   margin: 0 15px !important;
@@ -100,7 +100,7 @@ button.country-dropdown-toggle {
   color: #fff;
 }
 
-.country-dropdown-toggle:after,
+.dropdown-toggle:after,
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   background: none !important;
@@ -141,7 +141,7 @@ button.country-dropdown-toggle {
 }
 
 @media (max-width: 992px) {
-  button.country-dropdown-toggle {
+  a.dropdown-toggle {
     padding: 0 35px !important;
     display: block;
     line-height: 2.8125rem;
@@ -152,9 +152,9 @@ button.country-dropdown-toggle {
   }
 }
 
-.site-logo {
+/* .site-logo {
   pointer-events: none;
-}
+} */
 
 .top-navigation {
   height: 4.75rem;
