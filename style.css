@@ -27,12 +27,8 @@ Text Domain: planet4-child-theme-gcefca
     border-bottom: none !important;
   }
   .nav-link:hover,
-  a.country-dropdown-toggle:hover,
-  a.dropdown-toggle:hover,
-  .country-dropdown-toggle:hover,
-  .dropdown-toggle:hover {
+  a.country-dropdown-toggle:hover {
     border-bottom: 2px solid #fff !important;
-    font-size: 1.25rem !important;
   }
 }
 
@@ -107,7 +103,6 @@ a.dropdown-toggle {
 
 .country-dropdown-toggle:after,
 .dropdown-toggle:after,
-.visually-hidden:after,
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   background: none !important;
@@ -144,6 +139,19 @@ a.dropdown-toggle {
 
   .nav-link.about:hover {
     border-bottom: none !important;
+  }
+}
+
+@media (max-width: 992px) {
+  a.country-dropdown-toggle,
+  a.dropdown-toggle {
+    padding: 0 35px !important;
+    display: block;
+    line-height: 2.8125rem;
+    font-size: 1rem;
+    margin: 0.5em 0;
+    width: auto !important;
+    background: transparent;
   }
 }
 
