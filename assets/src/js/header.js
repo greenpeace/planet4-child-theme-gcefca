@@ -6,6 +6,7 @@ export const setupHeader = function ($) {
     [
       ".navbar-dropdown-toggle",
       ".country-dropdown-toggle",
+      ".dropdown-toggle",
       ".navbar-search-toggle",
     ].join(),
     function toggleNavDropdown(evt) {
@@ -36,9 +37,9 @@ export const setupHeader = function ($) {
       });
 
       // Toggle data-ga-action attribute used in GTM tracking.
-      $(".dropdown-toggle").attr(
+      $(".country-dropdown-toggle").attr(
         "data-ga-action",
-        $(".dropdown-toggle").attr("aria-expanded") === "false"
+        $(".country-dropdown-toggle").attr("aria-expanded") === "false"
           ? "Open About Menu"
           : "Close About Menu"
       );

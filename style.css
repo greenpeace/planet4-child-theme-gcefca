@@ -28,8 +28,11 @@ Text Domain: planet4-child-theme-gcefca
   }
   .nav-link:hover,
   a.country-dropdown-toggle:hover,
-  a.dropdown-toggle:hover {
+  a.dropdown-toggle:hover,
+  .country-dropdown-toggle:hover,
+  .dropdown-toggle:hover {
     border-bottom: 2px solid #fff !important;
+    font-size: 1.25rem !important;
   }
 }
 
@@ -104,6 +107,7 @@ a.dropdown-toggle {
 
 .country-dropdown-toggle:after,
 .dropdown-toggle:after,
+.visually-hidden:after,
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   background: none !important;
