@@ -30,9 +30,7 @@
 						class="nav-item">
 						{# the JS that controls the menu based on country-dropdown-toggle to detect the click #}
 						<a class="country-dropdown-toggle dropdown-toggle" data-bs-toggle="open" data-bs-target="#sub-about" aria-expanded="false" aria-label="{{ data_nav_bar.country_dropdown_toggle }}" data-ga-category="Menu Navigation" data-ga-action="Open About Menu" data-ga-label="{{ page_category }}">
-							<span class="visually-hidden">{{ __( 'Selected', 'planet4-master-theme' ) }}:</span>
-							{{ __( 'About', 'planet4-master-theme' ) }}
-							<span class="visually-hidden">{{ __( 'Change Country', 'planet4-master-theme' ) }}</span>
+							{{ item.title }}
 						</a>
 					</li>
 
