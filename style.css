@@ -106,7 +106,7 @@ a.dropdown-toggle {
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   background: none !important;
-  display: none;
+  display: none !important;
 }
 
 @media (min-width: 992px) {
