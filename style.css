@@ -12,11 +12,6 @@ Tags: light, accessibility-ready
 Text Domain: planet4-child-theme-gcefca
 */
 
-/*
-  Display which theme is active right now in bottom right corner
-  See also planet4-child-theme-gcefca. Feel free to drop or hide display
-*/
-
 .navbar-dropdown {
   justify-content: flex-end !important;
 }
@@ -30,20 +25,6 @@ Text Domain: planet4-child-theme-gcefca
   a.country-dropdown-toggle:hover {
     border-bottom: 2px solid #fff !important;
   }
-}
-
-.btn-primary {
-  cursor: pointer;
-  background: #05324c !important;
-  opacity: 0.8;
-  transition: 0.3s;
-  border: none;
-}
-.btn-primary:hover {
-  cursor: pointer;
-  background: #074365 !important;
-  opacity: 0.8;
-  border: none;
 }
 
 .split-two-column-item-image:before {
@@ -156,16 +137,34 @@ a.dropdown-toggle {
 }
 
 .top-navigation {
-  height: 4.75rem;
+  height: 6.5rem;
 }
 
 .site-logo img {
-  height: 3rem !important;
+  height: 6rem !important;
 }
 
 @media (max-width: 992px) {
   .site-logo img {
-    margin-top: 1rem;
+    margin-top: 0.25rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .site-logo {
+    margin-left: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-logo {
+    margin-left: calc((100% - 1140px) / 2);
+  }
+}
+
+@media (min-width: 1600px) {
+  .site-logo {
+    margin-left: calc((100% - 1320px) / 2);
   }
 }
 
@@ -184,4 +183,22 @@ article {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.purpose-statement {
+  font-size: 1.5em;
+  line-height: normal;
+}
+
+.registration-number {
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.copyright-text {
+  width: unset;
+}
+
+.column-wrap p {
+  font-size: 1em !important;
 }
