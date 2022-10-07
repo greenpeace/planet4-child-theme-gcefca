@@ -16,15 +16,8 @@ Text Domain: planet4-child-theme-gcefca
   justify-content: flex-end !important;
 }
 
-@media (min-width: 992px) {
-  .nav-link {
-    margin: 0 15px !important;
-    border-bottom: none !important;
-  }
-  .nav-link:hover,
-  a.country-dropdown-toggle:hover {
-    border-bottom: 2px solid #fff !important;
-  }
+form#search_form, li.nav-donate {
+  display: none
 }
 
 .split-two-column-item-image:before {
