@@ -16,7 +16,7 @@ Text Domain: planet4-child-theme-gcefca
   justify-content: flex-end !important;
 }
 
-form#search_form, li.nav-donate {
+form#search_form, .nav-search-toggle-container, li.nav-donate, .burger-menu-footer {
   display: none
 }
 
@@ -134,7 +134,7 @@ a.dropdown-toggle {
 }
 
 .site-logo img {
-  height: 6rem !important;
+  height: 4rem !important;
 }
 
 @media (max-width: 992px) {
