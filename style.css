@@ -16,7 +16,7 @@ Text Domain: planet4-child-theme-gcefca
   justify-content: flex-end !important;
 }
 
-form#search_form, .nav-search-toggle-container, li.nav-donate, .burger-menu-footer {
+form#search_form, .nav-search-toggle-container, li.nav-donate, .burger-menu-footer, .nav-search-toggle-container.medium-and-less {
   display: none
 }
 
@@ -114,6 +114,9 @@ a.dropdown-toggle {
   .nav-link.about:hover {
     border-bottom: none !important;
   }
+  .nav-search-toggle-container {
+    display: none
+  }
 }
 
 @media (max-width: 992px) {
@@ -131,6 +134,17 @@ a.dropdown-toggle {
 
 .top-navigation {
   height: 6.5rem;
+  justify-content: center;
+}
+
+.nav-menu-toggle {
+  position: absolute;
+  left: 0;
+  line-height: 6.5rem;
+}
+
+.site-logo {
+  align-self: center;
 }
 
 .site-logo img {
