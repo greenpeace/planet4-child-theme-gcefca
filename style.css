@@ -209,3 +209,6 @@ article {
 .column-wrap p {
   font-size: 1em !important;
 }
+.page-header {
+  padding-top: 110px;
+}
