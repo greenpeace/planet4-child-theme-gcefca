@@ -22,5 +22,6 @@
     }
   },
   "require": {
+    "wpackagist-plugin/google-site-kit":"*"
   }
 }
