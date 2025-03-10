@@ -22,6 +22,6 @@
     }
   },
   "require": {
-    "wpackagist-plugin/google-site-kit":"*"
+    "wpackagist-plugin/google-site-kit":"1.145.0"
   }
 }
