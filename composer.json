@@ -20,8 +20,5 @@
         "type:wordpress-plugin"
       ]
     }
-  },
-  "require": {
-    "wpackagist-plugin/google-site-kit":"1.145.0"
   }
 }

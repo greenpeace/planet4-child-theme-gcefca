@@ -16,8 +16,22 @@ Text Domain: planet4-child-theme-gcefca
   justify-content: flex-end !important;
 }
 
-form#search_form, .nav-search-toggle-container, li.nav-donate, .burger-menu-footer, .nav-search-toggle-container.medium-and-less {
+form#search_form,
+.nav-search-toggle-container,
+li.nav-donate,
+.burger-menu-footer,
+.nav-search-toggle-container.medium-and-less,
+.footer-country-selector,
+.footer-menu {
   display: none
+}
+
+.site-footer {
+  padding-top: 0;
+}
+
+.site-footer .copyright {
+  text-align: center
 }
 
 .split-two-column-item-image:before {
